@@ -1,13 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "./theme";
+import AppRouter from "./Routes";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello world
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AppRouter />
+    </ThemeProvider>
   );
 }
 
