@@ -66,7 +66,8 @@ const Nav = () => {
             justifyContent: "center",
             zIndex: 0,
             marginTop: '-2.4rem',
-            position: 'relative'
+            position: 'relative',
+            letterSpacing: '3px'
           }}
         >
           <Slide in={checked} direction="down" timeout={500}>
