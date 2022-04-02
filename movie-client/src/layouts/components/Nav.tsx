@@ -4,6 +4,7 @@ import {
   IconButton,
   List,
   ListItem,
+  Slide,
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -11,27 +12,28 @@ import PersonIcon from "@mui/icons-material/Person";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const Nav = () => {
-    const [open, setOpen] = useState('none')
+  const [open, setOpen] = useState("none");
+  const [checked, setChecked] = useState(false);
 
-const openMenu = () => {
-    if(open === 'none'){
-        setOpen('initial')
-    }else{
-        setOpen('none')
+  const openMenu = () => {
+    if (open === "none") {
+      setOpen("flex");
+    } else {
+      setOpen("none");
     }
-}
+    setChecked((prev) => !prev);
+  };
 
   return (
-    <Container sx={{position:'absolute', zIndex:'1'}}>
+    <Container sx={{ position: "absolute", zIndex: "1", padding:'0' }}>
       <Box
         sx={{
-          padding: "1.25rem 20px",
           display: "flex",
           justifyContent: "space-between",
           color: "white",
         }}
       >
-        <Box>
+        <Box zIndex={100}>
           <Typography
             sx={{
               maxHeight: "2.4rem",
@@ -44,7 +46,7 @@ const openMenu = () => {
           </Typography>
         </Box>
 
-        <Box>
+        <Box zIndex={100}>
           <IconButton>
             <PersonIcon sx={{ color: "white" }} />
           </IconButton>
@@ -53,27 +55,22 @@ const openMenu = () => {
           </IconButton>
         </Box>
       </Box>
-      <Box
-        sx={{
-          background: "black",
-          color: "white",
-          height: "100%",
-          width: "100%",
-          position: "fixed",
-          top: "0px",
-          left: "0px",
-          zIndex: "-1",
-          display: open
-        }}
-      >
-        <List
+        <Box
           sx={{
-            display: "flex",
+            background: "black",
+            color: "white",
+            height: "100vh",
+            width: "100vw",
+            display: open,
             flexDirection: "column",
-            height: "100%",
-            width: "100%",
             justifyContent: "center",
+            zIndex: 0,
+            marginTop: '-2.4rem',
+            position: 'relative'
           }}
+        >
+          <Slide in={checked} direction="down" timeout={500}>
+          <List
         >
           <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
             Home
@@ -85,7 +82,9 @@ const openMenu = () => {
             Cinemas
           </ListItem>
         </List>
-      </Box>
+          </Slide>
+         
+        </Box>
     </Container>
   );
 };
