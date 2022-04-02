@@ -1,14 +1,11 @@
-import { Box } from '@mui/material';
-import React from 'react';
-
+import { Box } from "@mui/material";
+import React, { Fragment } from "react";
+import BannerGroup from "../components/home/BannerGroup";
 
 const Home = () => {
-
-    return(
-        <Box sx={{background:'grey', width:'100%', height: '500px'}}>
-        there is the home page
-        </Box>
-    )
-}
+  return <Fragment>
+    <BannerGroup />
+  </Fragment>;
+};
 
 export default Home;

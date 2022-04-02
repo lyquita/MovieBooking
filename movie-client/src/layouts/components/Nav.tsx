@@ -40,13 +40,14 @@ const Nav = () => {
               width: "auto",
               fontSize: "2rem",
               letterSpacing: "1px",
+              margin: '0 2rem'
             }}
           >
             FIMO
           </Typography>
         </Box>
 
-        <Box zIndex={100}>
+        <Box zIndex={100} sx={{margin: '0 2rem'}} >
           <IconButton>
             <PersonIcon sx={{ color: "white" }} />
           </IconButton>
