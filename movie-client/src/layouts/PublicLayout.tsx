@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 
 interface Props{
@@ -11,6 +12,7 @@ const PublicLayout:React.FC<Props> = ({children}) =>{
         <div>
             <Nav />
             {children}
+            <Footer />
         </div>
     )
 }

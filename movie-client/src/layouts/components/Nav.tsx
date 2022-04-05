@@ -67,7 +67,7 @@ const Nav = () => {
             justifyContent: "center",
             zIndex: 0,
             marginTop: '-2.4rem',
-            position: 'relative',
+            position: 'fixed',
             letterSpacing: '3px'
           }}
         >
