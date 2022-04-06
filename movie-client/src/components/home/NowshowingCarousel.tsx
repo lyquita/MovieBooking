@@ -55,7 +55,6 @@ const NowshowingCarousel = () => {
   }
 
   const settings = {
-    dots: true,
     speed: 500,
     centerPadding: "50px",
     slidesToShow: 1,
@@ -63,6 +62,7 @@ const NowshowingCarousel = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     centerMode: true,
+    className:'carousel-center'
   };
 
   return (
@@ -85,7 +85,7 @@ const NowshowingCarousel = () => {
         </Typography>
       </Box>
       <Box>
-        <Slider {...settings}>
+        <Slider {...settings} >
           <Box
             sx={{
               display: "flex !important",

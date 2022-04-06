@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Home */
+.slick-active{
+  background: #2d2d2d;
+}

@@ -55,7 +55,6 @@ const ComingSoonCarousel = () => {
   }
 
   const settings = {
-    dots: true,
     speed: 500,
     centerPadding: "50px",
     slidesToShow: 1,

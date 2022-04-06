@@ -2,6 +2,7 @@ import { Box, capitalize, Typography } from "@mui/material";
 import React, { Fragment } from "react";
 import Slider from "react-slick";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { Link } from "react-router-dom";
 
 const BannerGroup = () => {
   const seetings = {
@@ -70,7 +71,9 @@ const BannerGroup = () => {
               </Typography>
             </Box>
             <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-                <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+              <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
+              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+              </Link>
                 <ArrowRightAltIcon />
             </Box>
           </Box>
@@ -131,7 +134,9 @@ const BannerGroup = () => {
               </Typography>
             </Box>
             <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-                <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+            <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
+              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+              </Link>
                 <ArrowRightAltIcon />
             </Box>
           </Box>
@@ -196,7 +201,9 @@ const BannerGroup = () => {
               </Typography>
             </Box>
             <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-                <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+            <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
+              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+              </Link>
                 <ArrowRightAltIcon />
             </Box>
           </Box>
