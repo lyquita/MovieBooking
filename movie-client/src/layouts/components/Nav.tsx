@@ -31,6 +31,7 @@ const Nav = () => {
           display: "flex",
           justifyContent: "space-between",
           color: "white",
+          padding:'2rem 0'
         }}
       >
         <Box zIndex={100}>
@@ -65,8 +66,8 @@ const Nav = () => {
             display: open,
             flexDirection: "column",
             justifyContent: "center",
-            zIndex: 0,
-            marginTop: '-2.4rem',
+            zIndex: -1,
+            marginTop: '-104px',
             position: 'fixed',
             letterSpacing: '3px'
           }}
