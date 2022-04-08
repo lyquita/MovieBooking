@@ -10,9 +10,30 @@ const AppRouter = () => {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
-        <Route path="/" element={<PublicLayout><Home/></PublicLayout>} />
-        <Route path="/movie-info" element={<PublicLayout><MovieInfo/></PublicLayout>} />
-        <Route path="/showtime" element={<PublicLayout><Showtime/></PublicLayout>} />
+        <Route
+          path="/"
+          element={
+            <PublicLayout>
+              <Home />
+            </PublicLayout>
+          }
+        />
+        <Route
+          path="/movie-info"
+          element={
+            <PublicLayout withFooter={false}>
+              <MovieInfo />
+            </PublicLayout>
+          }
+        />
+        <Route
+          path="/showtime"
+          element={
+            <PublicLayout withFooter={false}>
+              <Showtime />
+            </PublicLayout>
+          }
+        />
       </Routes>
     </Suspense>
   );
