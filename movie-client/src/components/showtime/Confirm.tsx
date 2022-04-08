@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 const Confirm = () => {
   return (
-    <Box sx={{display:'flex', justifyContent:'center'}}>
+    <Box sx={{display:'flex', justifyContent:'center', paddingBottom:'2rem'}}>
 
     <Grid container sx={{ width: "80%", background: "rgb(26, 26, 26)", alignItems:'center'}} >
       <Grid item xs={4} padding={2}>
