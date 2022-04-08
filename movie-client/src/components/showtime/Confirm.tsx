@@ -1,6 +1,12 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
+import React from "react";
 
-const Confirm = () => {
+interface Props{
+  setReserved:React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Confirm:React.FC<Props> = ({setReserved}) => {
+  
   return (
     <Box sx={{display:'flex', justifyContent:'center', paddingBottom:'2rem'}}>
 
@@ -14,7 +20,11 @@ const Confirm = () => {
         <Typography color="white">$10</Typography>
       </Grid>
       <Grid item xs={4} padding={2}  sx={{background:'black', height:'100%', display:'flex', alignItems:'center', border:'#282c34 1px solid'}} >
+        <Button onClick={()=> setReserved(true)}>
+
         <Typography color='rgb(120, 205, 4)'>Checkout</Typography>
+
+        </Button>
       </Grid>
     </Grid>
     </Box>
