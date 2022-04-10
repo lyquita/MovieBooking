@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Link } from 'react-router-dom';
+
 
 const MovieInfo = () => {
   return (
@@ -86,7 +87,9 @@ const MovieInfo = () => {
           alignItems: "center",
         }}
       >
+        <Link to='/showtime' style={{'textDecoration':'none', color:'black'}}>
         <Typography marginRight={1}>Buy Ticket</Typography>
+        </Link>
         <ArrowRightAltIcon />
       </Box>
     </Box>

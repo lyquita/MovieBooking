@@ -6,6 +6,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Reserved = () => {
   return (
@@ -53,7 +54,9 @@ const Reserved = () => {
           />
           <Stack display='flex' flexDirection='row' marginTop={2} >
             <Button variant='outlined' sx={{marginRight:'1rem', '&.MuiButton-root':{color:'rgba(255, 255, 255, 0.7)', border:'1px solid rgba(255, 255, 255, 0.7)' }}}>Send Invitations</Button>
+            <Link to='/' style={{'textDecoration':'none', color:'white'}}>
             <Button variant='outlined' color='warning'>Cancel</Button>
+            </Link>
           </Stack>
         </Box>
       </Box>
