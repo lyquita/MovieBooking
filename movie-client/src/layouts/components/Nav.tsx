@@ -106,7 +106,10 @@ const Nav = () => {
         <Slide in={checked} direction="down" timeout={500}>
           <List>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
+              <Link to='/' style={{'textDecoration':'none', color:'white'}}>
               Home
+
+              </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
               Movies
