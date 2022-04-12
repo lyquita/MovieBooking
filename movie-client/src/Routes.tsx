@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading";
 import PublicLayout from "./layouts/PublicLayout";
+import Cinemas from "./pages/cinema";
 import Home from "./pages/home";
 import Login from "./pages/login";
 import Me from "./pages/me";
@@ -46,15 +47,14 @@ const AppRouter = () => {
             </PublicLayout>
           }
         />
-        <Route 
+        <Route
           path="/login"
           element={
             <PublicLayout withFooter={false}>
               <Login />
             </PublicLayout>
           }
-        >
-          </Route>
+        ></Route>
         <Route
           path="/signup"
           element={
@@ -62,18 +62,23 @@ const AppRouter = () => {
               <Signup />
             </PublicLayout>
           }
-        >
-        </Route>
-        <Route 
-        path="/nowshowing"
-        element={
-          <PublicLayout >
-            <NowShowing />
-          </PublicLayout>
-        }
-        >
-
-        </Route>
+        ></Route>
+        <Route
+          path="/nowshowing"
+          element={
+            <PublicLayout>
+              <NowShowing />
+            </PublicLayout>
+          }
+        ></Route>
+          <Route
+          path="/cinemas"
+          element={
+            <PublicLayout>
+              <Cinemas />
+            </PublicLayout>
+          }
+        ></Route>
       </Routes>
     </Suspense>
   );
