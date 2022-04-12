@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Me from "./pages/me";
 import MovieInfo from "./pages/movieInfo";
+import Movies from "./pages/nowshowing";
 import NowShowing from "./pages/nowshowing";
 import Showtime from "./pages/showtime";
 import Signup from "./pages/signup";
@@ -64,10 +65,10 @@ const AppRouter = () => {
           }
         ></Route>
         <Route
-          path="/nowshowing"
+          path="/movies"
           element={
             <PublicLayout>
-              <NowShowing />
+              <Movies />
             </PublicLayout>
           }
         ></Route>
