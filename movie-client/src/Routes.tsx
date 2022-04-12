@@ -7,6 +7,7 @@ import Login from "./pages/login";
 import Me from "./pages/me";
 import MovieInfo from "./pages/movieInfo";
 import Showtime from "./pages/showtime";
+import Signup from "./pages/signup";
 
 const AppRouter = () => {
   return (
@@ -49,6 +50,15 @@ const AppRouter = () => {
           element={
             <PublicLayout withFooter={false}>
               <Login />
+            </PublicLayout>
+          }
+        >
+          </Route>
+        <Route
+          path="/signup"
+          element={
+            <PublicLayout withFooter={false}>
+              <Signup />
             </PublicLayout>
           }
         >
