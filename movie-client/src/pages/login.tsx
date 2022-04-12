@@ -89,7 +89,7 @@ const Login = () => {
           Login now
         </Button>
         <Typography fontSize={12}>
-          Don't have an account?{" "}
+          Don't have an account?
           <Link
             to="/signup"
             style={{
