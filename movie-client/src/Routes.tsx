@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Me from "./pages/me";
 import MovieInfo from "./pages/movieInfo";
+import NowShowing from "./pages/nowshowing";
 import Showtime from "./pages/showtime";
 import Signup from "./pages/signup";
 
@@ -61,6 +62,15 @@ const AppRouter = () => {
               <Signup />
             </PublicLayout>
           }
+        >
+        </Route>
+        <Route 
+        path="/nowshowing"
+        element={
+          <PublicLayout >
+            <NowShowing />
+          </PublicLayout>
+        }
         >
 
         </Route>
