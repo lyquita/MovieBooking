@@ -23,11 +23,6 @@ const BannerGroup = () => {
             backgroundSize:'cover'
           }}
         >
-          {/* <img
-            src="https://poster.gsc.com.my/2022/220310_TheContractor_big.jpg"
-            alt=""
-            style={{ position: "relative" }}
-          /> */}
           <Box
             sx={{
               position: "absolute",
@@ -97,12 +92,15 @@ const BannerGroup = () => {
             </Box>
           </Box>
         </Box>
-        {/* <Box>
-          <img
-            src="https://poster.gsc.com.my/2021/211030_Spider-manNoWayHome_big.jpg"
-            alt=""
-            style={{ position: "relative" }}
-          />
+        <Box
+          sx={{
+            backgroundImage:
+              "url('https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg')",
+            height: "80vh",
+            backgroundRepeat:"no-repeat",
+            backgroundSize:'cover'
+          }}
+        >
           <Box
             sx={{
               position: "absolute",
@@ -119,7 +117,7 @@ const BannerGroup = () => {
           >
             <Box sx={{ padding: "2rem" }}>
               <Typography fontSize={16} fontWeight={400} lineHeight={2}>
-                The Batman
+                Whats sup!!
               </Typography>
               <Typography
                 fontSize={12}
@@ -127,9 +125,13 @@ const BannerGroup = () => {
                 lineHeight={2}
                 color="#cfd6e1"
               >
-                Robert Pattinson stars as the titular Caped Crusader in this big
-                screen adaptation directed by Matt Reeves, which focuses on a
-                younger Batman.
+                In his attempt to cure his own blood disorder, a biochemist
+                inadvertently turns himself into a pseudo-vampire with
+                superhuman abilities.   In his attempt to cure his own blood disorder, a biochemist
+                inadvertently turns himself into a pseudo-vampire with
+                superhuman abilities.   In his attempt to cure his own blood disorder, a biochemist
+                inadvertently turns himself into a pseudo-vampire with
+                superhuman abilities.
               </Typography>
               <Typography
                 sx={{
@@ -172,12 +174,15 @@ const BannerGroup = () => {
             </Box>
           </Box>
         </Box>
-        <Box>
-          <img
-            src="https://poster.gsc.com.my/2022/220317_FantasticBeastsTheSecretsOfDumbledore_big.jpg"
-            alt=""
-            style={{ position: "relative" }}
-          />
+        <Box
+          sx={{
+            backgroundImage:
+              "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg')",
+            height: "80vh",
+            backgroundRepeat:"no-repeat",
+            backgroundSize:'cover'
+          }}
+        >
           <Box
             sx={{
               position: "absolute",
@@ -194,7 +199,7 @@ const BannerGroup = () => {
           >
             <Box sx={{ padding: "2rem" }}>
               <Typography fontSize={16} fontWeight={400} lineHeight={2}>
-                The Contractor
+                Hellow
               </Typography>
               <Typography
                 fontSize={12}
@@ -202,11 +207,7 @@ const BannerGroup = () => {
                 lineHeight={2}
                 color="#cfd6e1"
               >
-                when john rambo's niece travels to mexico to find the father
-                that abandoned her and her mother, she finds herself in the
-                grasps of calle mexican sex traffickers. when she doesn't return
-                home as expected, john learns she's crossed into mexico and sets
-                out to get her back and make them pay.
+               Forecxdafsfgadsgasgdagdagfdasgfadfafggadsfadsfadsfasfadsfasfads
               </Typography>
               <Typography
                 sx={{
@@ -248,7 +249,7 @@ const BannerGroup = () => {
               <ArrowRightAltIcon />
             </Box>
           </Box>
-        </Box> */}
+        </Box>
       </Slider>
     </>
   );
