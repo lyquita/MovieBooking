@@ -1,7 +1,5 @@
 import {
   ArrowBackIosNewOutlined,
-  ArrowLeft,
-  ArrowLeftOutlined,
 } from "@mui/icons-material";
 import {
   Box,

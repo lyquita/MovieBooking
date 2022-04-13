@@ -1,14 +1,9 @@
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import {
   Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
   Grid,
   Paper,
   Tab,
-  Tabs,
   Typography,
 } from "@mui/material";
 import { useState } from "react";

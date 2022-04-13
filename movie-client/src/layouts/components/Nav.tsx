@@ -17,7 +17,9 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const [open, setOpen] = useState("none");
   const [checked, setChecked] = useState(false);
-  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
+  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
+    null
+  );
 
   const openMe = Boolean(anchorEl);
 
@@ -26,8 +28,8 @@ const Nav = () => {
   };
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget)
-  }
+    setAnchorEl(event.currentTarget);
+  };
 
   const openMenu = () => {
     if (open === "none") {
@@ -39,7 +41,7 @@ const Nav = () => {
   };
 
   return (
-    <Container sx={{ position: "absolute", zIndex: "1", padding: "0" }}>
+    <Container sx={{ position: "absolute", zIndex: "1", padding: "0" }} maxWidth={false}>
       <Box
         sx={{
           display: "flex",
@@ -49,41 +51,75 @@ const Nav = () => {
         }}
       >
         <Box zIndex={100}>
-          <Link to='/'  style={{'textDecoration':'none', color:'white'}}>
-          <Typography
-            sx={{
-              maxHeight: "2.4rem",
-              width: "auto",
-              fontSize: "2rem",
-              letterSpacing: "1px",
-              margin: "0 2rem",
-            }}
-          >
-            FIMO
-          </Typography>
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <Typography
+              sx={{
+                maxHeight: "2.4rem",
+                width: "auto",
+                fontSize: "2rem",
+                letterSpacing: "1px",
+                margin: "0 2rem",
+              }}
+            >
+              FIMO
+            </Typography>
           </Link>
-
         </Box>
+        <List sx={{display:{xs:'none', lg:'flex'}}}>
+            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }} >
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                Home
+              </Link>
+            </ListItem>
+            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+              Movies
+            </ListItem>
+            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+              Cinemas
+            </ListItem>
+          </List>
+
 
         <Box zIndex={100} sx={{ margin: "0 2rem" }}>
           <IconButton onClick={handleClick}>
-          <PersonIcon sx={{ color: "white" }} />
+            <PersonIcon sx={{ color: "white" }} />
           </IconButton>
           <Popover
-              open={openMe}
-              anchorEl={anchorEl}
-              onClose={handleClose}
-              sx={{top:'3rem', padding:'0.5rem 2rem'}}
+            open={openMe}
+            anchorEl={anchorEl}
+            onClose={handleClose}
+            sx={{ top: "3rem", padding: "0.5rem 2rem" }}
+          >
+            <MenuItem
+              sx={{
+                background: "rgb(26, 26, 26)",
+                color: "white",
+                "&:hover": { backgroundColor: "black" },
+              }}
             >
-              <MenuItem sx={{background:'rgb(26, 26, 26)', color:'white', '&:hover':{backgroundColor:'black'}}}>
-                <Link to='/me'  style={{'textDecoration':'none', color:'white'}}>
+              <Link to="/me" style={{ textDecoration: "none", color: "white" }}>
                 Account
-                </Link>
-                </MenuItem>
-              <MenuItem sx={{background:'rgb(26, 26, 26)', color:'white', '&:hover':{backgroundColor:'black'}}}>Log out</MenuItem>
-          
-            </Popover>
-          <IconButton onClick={openMenu}>
+              </Link>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                background: "rgb(26, 26, 26)",
+                color: "white",
+                "&:hover": { backgroundColor: "black" },
+              }}
+            >
+              Log out
+            </MenuItem>
+          </Popover>
+          <IconButton
+            onClick={openMenu}
+            sx={{
+              display: {
+                xs: "initial",
+                lg: "none",
+              },
+            }}
+          >
             <MenuIcon sx={{ color: "white" }} />
           </IconButton>
         </Box>
@@ -106,9 +142,8 @@ const Nav = () => {
         <Slide in={checked} direction="down" timeout={500}>
           <List>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
-              <Link to='/' style={{'textDecoration':'none', color:'white'}}>
-              Home
-
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                Home
               </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>

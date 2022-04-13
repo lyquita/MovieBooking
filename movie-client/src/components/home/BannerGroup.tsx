@@ -1,7 +1,6 @@
-import { Box, capitalize, Typography } from "@mui/material";
-import React, { Fragment } from "react";
+import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { Link } from "react-router-dom";
 
 const BannerGroup = () => {
@@ -13,14 +12,22 @@ const BannerGroup = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <Slider {...seetings}>
-        <Box>
-          <img
+        <Box
+          sx={{
+            backgroundImage:
+              "url('https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg')",
+            height: "80vh",
+            backgroundRepeat:"no-repeat",
+            backgroundSize:'cover'
+          }}
+        >
+          {/* <img
             src="https://poster.gsc.com.my/2022/220310_TheContractor_big.jpg"
             alt=""
             style={{ position: "relative" }}
-          />
+          /> */}
           <Box
             sx={{
               position: "absolute",
@@ -37,7 +44,7 @@ const BannerGroup = () => {
           >
             <Box sx={{ padding: "2rem" }}>
               <Typography fontSize={16} fontWeight={400} lineHeight={2}>
-              Morbius
+                Morbius
               </Typography>
               <Typography
                 fontSize={12}
@@ -45,7 +52,9 @@ const BannerGroup = () => {
                 lineHeight={2}
                 color="#cfd6e1"
               >
-               In his attempt to cure his own blood disorder, a biochemist inadvertently turns himself into a pseudo-vampire with superhuman abilities.
+                In his attempt to cure his own blood disorder, a biochemist
+                inadvertently turns himself into a pseudo-vampire with
+                superhuman abilities.
               </Typography>
               <Typography
                 sx={{
@@ -70,15 +79,25 @@ const BannerGroup = () => {
                 Action
               </Typography>
             </Box>
-            <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-              <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
-              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+            <Box
+              sx={{
+                position: "fixed",
+                bottom: "5%",
+                left: "2%",
+                display: "flex",
+              }}
+            >
+              <Link
+                to="/movie-info"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
               </Link>
-                <ArrowRightAltIcon />
+              <ArrowRightAltIcon />
             </Box>
           </Box>
         </Box>
-        <Box>
+        {/* <Box>
           <img
             src="https://poster.gsc.com.my/2021/211030_Spider-manNoWayHome_big.jpg"
             alt=""
@@ -100,7 +119,7 @@ const BannerGroup = () => {
           >
             <Box sx={{ padding: "2rem" }}>
               <Typography fontSize={16} fontWeight={400} lineHeight={2}>
-              The Batman
+                The Batman
               </Typography>
               <Typography
                 fontSize={12}
@@ -108,7 +127,9 @@ const BannerGroup = () => {
                 lineHeight={2}
                 color="#cfd6e1"
               >
-              Robert Pattinson stars as the titular Caped Crusader in this big screen adaptation directed by Matt Reeves, which focuses on a younger Batman.
+                Robert Pattinson stars as the titular Caped Crusader in this big
+                screen adaptation directed by Matt Reeves, which focuses on a
+                younger Batman.
               </Typography>
               <Typography
                 sx={{
@@ -133,11 +154,21 @@ const BannerGroup = () => {
                 Action
               </Typography>
             </Box>
-            <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-            <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
-              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+            <Box
+              sx={{
+                position: "fixed",
+                bottom: "5%",
+                left: "2%",
+                display: "flex",
+              }}
+            >
+              <Link
+                to="/movie-info"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
               </Link>
-                <ArrowRightAltIcon />
+              <ArrowRightAltIcon />
             </Box>
           </Box>
         </Box>
@@ -200,16 +231,26 @@ const BannerGroup = () => {
                 Action
               </Typography>
             </Box>
-            <Box sx={{position:'fixed', bottom: '5%', left:'2%', display:'flex'}}>
-            <Link to='/movie-info' style={{'textDecoration':'none', color:'white'}}>
-              <Typography sx={{marginRight:'1rem'}}>INFO</Typography>
+            <Box
+              sx={{
+                position: "fixed",
+                bottom: "5%",
+                left: "2%",
+                display: "flex",
+              }}
+            >
+              <Link
+                to="/movie-info"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
               </Link>
-                <ArrowRightAltIcon />
+              <ArrowRightAltIcon />
             </Box>
           </Box>
-        </Box>
+        </Box> */}
       </Slider>
-    </Fragment>
+    </>
   );
 };
 

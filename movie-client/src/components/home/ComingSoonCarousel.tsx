@@ -1,6 +1,5 @@
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
-import { Fragment } from "react";
 import Slider from "react-slick";
 
 const ComingSoonCarousel = () => {
@@ -13,12 +12,12 @@ const ComingSoonCarousel = () => {
           color: "white",
           position: "absolute",
           height: "302px",
-          width:'3rem',
+          width: "3rem",
           left: "0",
           zIndex: "1",
           display: "flex",
           alignItems: "center",
-          marginTop: '-1px',
+          marginTop: "-1px",
           background:
             "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,37,0) 100%)",
         }}
@@ -37,16 +36,15 @@ const ComingSoonCarousel = () => {
           color: "white",
           position: "absolute",
           height: "302px",
-          width:'3rem',
+          width: "3rem",
           right: "0",
           zIndex: "1",
           display: "flex",
           alignItems: "center",
-          marginTop: '-1px',
+          marginTop: "-1px",
           background:
             "linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(0,0,37,0) 100%)",
-          top: '0',
-          
+          top: "0",
         }}
       >
         <ArrowForwardIos onClick={onClick} />
