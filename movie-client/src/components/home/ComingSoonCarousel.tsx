@@ -1,8 +1,11 @@
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Slider from "react-slick";
 
 const ComingSoonCarousel = () => {
+  const matches = useMediaQuery('(min-width:375px)');
+
+
   //@ts-ignore
   function PrevArrow(props) {
     const { onClick } = props;
@@ -55,11 +58,12 @@ const ComingSoonCarousel = () => {
   const settings = {
     speed: 500,
     centerPadding: "50px",
-    slidesToShow: 1,
+    slidesToShow: matches?4:1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    centerMode: true,
+    centerMode: matches? false:true,
+    className: matches?'':"carousel-center",
   };
 
   return (

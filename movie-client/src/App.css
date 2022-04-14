@@ -62,3 +62,15 @@
 .table-cell{
   color: #fff !important
 }
+
+
+
+@media (min-width:375px){
+
+  /* Home */
+.slick-active{
+  background: black
+}
+
+
+}

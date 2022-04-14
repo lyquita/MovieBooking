@@ -1,8 +1,11 @@
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Slider from "react-slick";
 
+
 const NowshowingCarousel = () => {
+  const matches = useMediaQuery('(min-width:375px)');
+
   //@ts-ignore
   function PrevArrow(props) {
     const { onClick } = props;
@@ -52,15 +55,17 @@ const NowshowingCarousel = () => {
     );
   }
 
+
+
   const settings = {
     speed: 500,
     centerPadding: "50px",
-    slidesToShow: 1,
+    slidesToShow: matches?4:1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    centerMode: true,
-    className: "carousel-center",
+    centerMode: matches? false:true,
+    className: matches?'':"carousel-center",
   };
 
   return (
@@ -137,6 +142,42 @@ const NowshowingCarousel = () => {
             </Box>
             <Typography color="white" padding="1rem 0">
               CC
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex !important",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
+              <img
+                src="https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg"
+                alt=""
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Box>
+            <Typography color="white" padding="1rem 0">
+              Man
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex !important",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
+              <img
+                src="https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg"
+                alt=""
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Box>
+            <Typography color="white" padding="1rem 0">
+              Man
             </Typography>
           </Box>
           <Box

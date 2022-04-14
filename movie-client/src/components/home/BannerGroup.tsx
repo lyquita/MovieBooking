@@ -9,6 +9,8 @@ const BannerGroup = () => {
     infinite: true,
     speed: 5000,
     autoplay: true,
+    nextArrow:<></>,
+    prevArrow:<></>
   };
 
   return (
@@ -38,7 +40,7 @@ const BannerGroup = () => {
             }}
           >
             <Box sx={{ padding: "2rem" }}>
-              <Typography fontSize={16} fontWeight={400} lineHeight={2}>
+              <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
                 Morbius
               </Typography>
               <Typography
@@ -116,7 +118,7 @@ const BannerGroup = () => {
             }}
           >
             <Box sx={{ padding: "2rem" }}>
-              <Typography fontSize={16} fontWeight={400} lineHeight={2}>
+            <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
                 Whats sup!!
               </Typography>
               <Typography
@@ -198,7 +200,7 @@ const BannerGroup = () => {
             }}
           >
             <Box sx={{ padding: "2rem" }}>
-              <Typography fontSize={16} fontWeight={400} lineHeight={2}>
+            <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
                 Hellow
               </Typography>
               <Typography
