@@ -41,7 +41,10 @@ const Nav = () => {
   };
 
   return (
-    <Container sx={{ position: "absolute", zIndex: "1", padding: "0" }} maxWidth={false}>
+    <Container
+      sx={{ position: "absolute", zIndex: "1", padding: "0" }}
+      maxWidth={false}
+    >
       <Box
         sx={{
           display: "flex",
@@ -65,26 +68,29 @@ const Nav = () => {
             </Typography>
           </Link>
         </Box>
-        <List sx={{display:{xs:'none', lg:'flex'}}}>
-            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }} >
-              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                Home
-              </Link>
-            </ListItem>
-            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
-            <Link to="/movies" style={{ textDecoration: "none", color: "white" }}>
-
+        <List sx={{ display: { xs: "none", lg: "flex" } }}>
+          <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              Home
+            </Link>
+          </ListItem>
+          <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+            <Link
+              to="/movies"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               Movies
-              </Link>
-            </ListItem>
-            <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
-            <Link to="/cinemas" style={{ textDecoration: "none", color: "white" }}>
-
+            </Link>
+          </ListItem>
+          <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+            <Link
+              to="/cinemas"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               Cinemas
-              </Link>
-            </ListItem>
-          </List>
-
+            </Link>
+          </ListItem>
+        </List>
 
         <Box zIndex={100} sx={{ margin: "0 2rem" }}>
           <IconButton onClick={handleClick}>
@@ -153,10 +159,20 @@ const Nav = () => {
               </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
-              Movies
+              <Link
+                to="/movies"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Movies
+              </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "32px" }}>
-              Cinemas
+              <Link
+                to="/cinemas"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Cinemas
+              </Link>
             </ListItem>
           </List>
         </Slide>

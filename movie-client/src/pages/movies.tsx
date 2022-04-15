@@ -31,7 +31,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
@@ -91,7 +93,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
@@ -151,7 +155,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
@@ -216,7 +222,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
@@ -276,7 +284,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
@@ -336,7 +346,9 @@ const Movies = () => {
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-                margin:{md:'3rem 10rem'}
+                margin:{md:'3rem 10rem'},
+                width: {md:'60%'},
+                borderRadius:'10px'
               }}
             >
               <Box
