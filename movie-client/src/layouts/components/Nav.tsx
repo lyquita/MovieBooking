@@ -72,10 +72,16 @@ const Nav = () => {
               </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+            <Link to="/movies" style={{ textDecoration: "none", color: "white" }}>
+
               Movies
+              </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: "center", fontSize: "18px" }}>
+            <Link to="/cinemas" style={{ textDecoration: "none", color: "white" }}>
+
               Cinemas
+              </Link>
             </ListItem>
           </List>
 

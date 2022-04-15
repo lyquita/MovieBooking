@@ -7,7 +7,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Me from "./pages/me";
 import MovieInfo from "./pages/movieInfo";
-import Movies from "./pages/nowshowing";
+import Movies from "./pages/movies";
 import Showtime from "./pages/showtime";
 import Signup from "./pages/signup";
 

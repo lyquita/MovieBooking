@@ -17,7 +17,7 @@ const Movies = () => {
 
   return (
  <TabContext value={value}>
-   <TabList sx={{paddingTop:'104px', background:'black',  color:'white', '& .MuiTabs-indicator':{'display':'none'}}} onChange={handleChange}>
+   <TabList sx={{paddingTop:'104px', background:'black', justifyContent:'center',  color:'white', '& .MuiTabs-indicator':{'display':'none'}, '&	.MuiTabs-flexContainer':{justifyContent:'center'}}} onChange={handleChange}>
      <Tab label="Now Showing" value="nowshowing"  sx={{color:'white', '&.Mui-selected':{'color':'white', 'fontSize':'24px'}}}/>
      <Tab label="Coming Soon" value="comingsoon" sx={{color:'white',  '&.Mui-selected':{'color':'white', 'fontSize':'24px'}}}/>
    </TabList>
@@ -25,22 +25,24 @@ const Movies = () => {
     <Grid container sx={{ background: "black" }} justifyContent="center">
       <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
                     "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
-                  width: "100%",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
                 <Typography fontSize={25}>Spider Man</Typography>
@@ -69,7 +71,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
@@ -83,80 +85,24 @@ const Movies = () => {
       </Grid>
       <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-              }}
-            >
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url('https://image.tmdb.org/t/p/original/stemLQMLDrlpfIlZ5OjllOPT8QX.jpg')",
-                  width: "100%",
-                  padding: "2rem",
-                  backgroundSize: "cover",
-                  opacity: "0.8",
-                }}
-              >
-                <Typography fontSize={25}>Spider Man</Typography>
-                <Typography
-                  fontSize={16}
-                  color="rgb(154, 199, 250)"
-                  marginTop={1}
-                  fontWeight={500}
-                >
-                  By: Hireoo
-                </Typography>
-                <Box sx={{ display: "flex", marginTop: "1rem" }}>
-                  <Typography
-                    marginRight={2}
-                    border="1px solid grey"
-                    padding={0.5}
-                  >
-                    130 min
-                  </Typography>
-                  <Typography
-                    marginRight={2}
-                    border="1px solid grey"
-                    padding={0.5}
-                  >
-                    Fantasy
-                  </Typography>
-                </Box>
-              </Box>
-              <Box padding="1.5rem">
-                <Typography fontSize={12} color="rgb(207, 214, 225)">
-                  a kindhearted street urchin named aladdin embarks on a magical
-                  adventure after finding a lamp that releases a wisecracking
-                  genie while a power-hungry grand vizier vies for the same lamp
-                  that has the power to make their deepest wishes come true.
-                </Typography>
-              </Box>
-            </Box>
-          </Link>
-        </Paper>
-      </Grid>
-      <Grid item>
-        <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
-            <Box
-              sx={{
-                padding: "1.5rem",
-                background:
-                  "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
                     "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
-                  width: "100%",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
                 <Typography fontSize={25}>Spider Man</Typography>
@@ -185,7 +131,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
@@ -199,22 +145,24 @@ const Movies = () => {
       </Grid>
       <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
-                    "url('https://image.tmdb.org/t/p/original/stemLQMLDrlpfIlZ5OjllOPT8QX.jpg')",
-                  width: "100%",
+                    "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
                 <Typography fontSize={25}>Spider Man</Typography>
@@ -243,7 +191,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
@@ -256,30 +204,33 @@ const Movies = () => {
         </Paper>
       </Grid>
     </Grid>
+
    </TabPanel>
    <TabPanel value='comingsoon' sx={{padding:0}}>
    <Grid container sx={{ background: "black" }} justifyContent="center">
-      <Grid item>
+   <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
                     "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
-                  width: "100%",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
-                <Typography fontSize={25}>Spider Man</Typography>
+                <Typography fontSize={25}> What d fuck</Typography>
                 <Typography
                   fontSize={16}
                   color="rgb(154, 199, 250)"
@@ -305,7 +256,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
@@ -319,80 +270,24 @@ const Movies = () => {
       </Grid>
       <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
-              }}
-            >
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url('https://image.tmdb.org/t/p/original/stemLQMLDrlpfIlZ5OjllOPT8QX.jpg')",
-                  width: "100%",
-                  padding: "2rem",
-                  backgroundSize: "cover",
-                  opacity: "0.8",
-                }}
-              >
-                <Typography fontSize={25}>Spider Man</Typography>
-                <Typography
-                  fontSize={16}
-                  color="rgb(154, 199, 250)"
-                  marginTop={1}
-                  fontWeight={500}
-                >
-                  By: Hireoo
-                </Typography>
-                <Box sx={{ display: "flex", marginTop: "1rem" }}>
-                  <Typography
-                    marginRight={2}
-                    border="1px solid grey"
-                    padding={0.5}
-                  >
-                    130 min
-                  </Typography>
-                  <Typography
-                    marginRight={2}
-                    border="1px solid grey"
-                    padding={0.5}
-                  >
-                    Fantasy
-                  </Typography>
-                </Box>
-              </Box>
-              <Box padding="1.5rem">
-                <Typography fontSize={12} color="rgb(207, 214, 225)">
-                  a kindhearted street urchin named aladdin embarks on a magical
-                  adventure after finding a lamp that releases a wisecracking
-                  genie while a power-hungry grand vizier vies for the same lamp
-                  that has the power to make their deepest wishes come true.
-                </Typography>
-              </Box>
-            </Box>
-          </Link>
-        </Paper>
-      </Grid>
-      <Grid item>
-        <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
-            <Box
-              sx={{
-                padding: "1.5rem",
-                background:
-                  "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
                     "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
-                  width: "100%",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
                 <Typography fontSize={25}>Spider Man</Typography>
@@ -421,7 +316,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
@@ -435,22 +330,24 @@ const Movies = () => {
       </Grid>
       <Grid item>
         <Paper sx={{ background: "black", borderRadius: "10px", boxShadow:2 }}>
-          <Link to="/movie-info" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/movie-info" style={{ textDecoration: "none", color: "white", display:'flex', justifyContent:'center' }}>
             <Box
               sx={{
                 padding: "1.5rem",
                 background:
                   "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                margin:{md:'3rem 10rem'}
               }}
             >
               <Box
                 sx={{
                   backgroundImage:
-                    "url('https://image.tmdb.org/t/p/original/stemLQMLDrlpfIlZ5OjllOPT8QX.jpg')",
-                  width: "100%",
+                    "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/xnopI5Xtky18MPhK40cZAGAOVeV.jpg')",
+                  width: {lg:'60%'},
                   padding: "2rem",
                   backgroundSize: "cover",
                   opacity: "0.8",
+                  margin: '0 auto'
                 }}
               >
                 <Typography fontSize={25}>Spider Man</Typography>
@@ -479,7 +376,7 @@ const Movies = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box padding="1.5rem">
+              <Box padding="1.5rem" sx={{width:{lg:'60%'}, margin:'0 auto'}}>
                 <Typography fontSize={12} color="rgb(207, 214, 225)">
                   a kindhearted street urchin named aladdin embarks on a magical
                   adventure after finding a lamp that releases a wisecracking
