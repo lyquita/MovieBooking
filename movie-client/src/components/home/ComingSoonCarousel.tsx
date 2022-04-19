@@ -3,8 +3,21 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import Slider from "react-slick";
 
 const ComingSoonCarousel = () => {
-  const matches = useMediaQuery('(min-width:375px)');
+  const smallMatches = useMediaQuery("(min-width:375px)");
+  const middleMatches = useMediaQuery("(min-width:800px)");
+  const largeMatches = useMediaQuery("(min-width:1200px)");
 
+
+  function slidesToShow(){
+    if(smallMatches){
+      if(middleMatches){
+        if(largeMatches){
+          return 4
+        }
+        else return 4
+      }else return 2
+    }else return 1
+  }
 
   //@ts-ignore
   function PrevArrow(props) {
@@ -58,111 +71,150 @@ const ComingSoonCarousel = () => {
   const settings = {
     speed: 500,
     centerPadding: "50px",
-    slidesToShow: matches?4:1,
+    slidesToShow: slidesToShow(),
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    centerMode: matches? false:true,
-    className: matches?'':"carousel-center",
+    centerMode: smallMatches ? false : true,
+    className: smallMatches ? "" : "carousel-center",
   };
 
   return (
     <Box sx={{ padding: "48px 0" }}>
-      <Box sx={{ color: "white", display: "flex" }}>
-        <Typography
-          fontSize={32}
-          fontWeight={300}
-          lineHeight={1.5}
-          padding="2rem"
-        >
-          Coming Soon
-        </Typography>
-        <Typography
-          fontSize={11}
-          sx={{ display: "flex", alignItems: "center" }}
-          color="#03a9f4"
-        >
-          Explore All
-        </Typography>
-      </Box>
-      <Box>
-        <Slider {...settings}>
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              alignItems: "center",
-              ":focus": { backgroundColor: "#282828" },
-            }}
-          >
-            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
-              <img
-                src="https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg"
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
-            </Box>
-            <Typography color="white" padding="1rem 0">
-              Spider Man
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
-              <img
-                src="https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg"
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
-            </Box>
-            <Typography color="white" padding="1rem 0">
-              Hellow
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
-              <img
-                src="https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg"
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
-            </Box>
-            <Typography color="white" padding="1rem 0">
-              CC
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Box sx={{ width: "278px", height: "300px", background: "red" }}>
-              <img
-                src="https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg"
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
-            </Box>
-            <Typography color="white" padding="1rem 0">
-              Man
-            </Typography>
-          </Box>
-        </Slider>
-      </Box>
+    <Box sx={{ color: "white", display: "flex" }}>
+      <Typography
+        fontSize={32}
+        fontWeight={300}
+        lineHeight={1.5}
+        padding="2rem"
+      >
+        Coming Soon
+      </Typography>
+      <Typography
+        fontSize={11}
+        sx={{ display: "flex", alignItems: "center" }}
+        color="#03a9f4"
+      >
+        Explore All
+      </Typography>
     </Box>
+    <Box>
+      <Slider {...settings}>
+        <Box
+          sx={{
+        
+            padding: '0 1rem',
+            ":hover": { backgroundColor: "#282828" },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "300px",
+              backgroundImage:
+                "url('https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg')",
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'center'
+            }}
+          >
+          </Box>
+          <Typography color="white" padding="1rem 0" textAlign='center'>
+            Spider Man
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+        
+            padding: '0 1rem',
+            ":hover": { backgroundColor: "#282828" },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "300px",
+              backgroundImage:
+                "url('https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg')",
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'center'
+            }}
+          >
+          </Box>
+          <Typography color="white" padding="1rem 0" textAlign='center'>
+            Spider Man
+          </Typography>
+        </Box><Box
+          sx={{
+        
+            padding: '0 1rem',
+            ":hover": { backgroundColor: "#282828" },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "300px",
+              backgroundImage:
+                "url('https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg')",
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'center'
+            }}
+          >
+          </Box>
+          <Typography color="white" padding="1rem 0" textAlign='center'>
+            Spider Man
+          </Typography>
+        </Box><Box
+          sx={{
+        
+            padding: '0 1rem',
+            ":hover": { backgroundColor: "#282828" },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "300px",
+              backgroundImage:
+                "url('https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg')",
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'center'
+            }}
+          >
+          </Box>
+          <Typography color="white" padding="1rem 0" textAlign='center'>
+            Spider Man
+          </Typography>
+        </Box><Box
+          sx={{
+        
+            padding: '0 1rem',
+            ":hover": { backgroundColor: "#282828" },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "300px",
+              backgroundImage:
+                "url('https://image.tmdb.org/t/p/original/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg')",
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'center'
+            }}
+          >
+          </Box>
+          <Typography color="white" padding="1rem 0" textAlign='center'>
+            Spider Man
+          </Typography>
+        </Box>
+      </Slider>
+    </Box>
+  </Box>
   );
 };
 
