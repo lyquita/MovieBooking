@@ -10,7 +10,7 @@ import {
 
 const Filter = () => {
   return (
-    <Box>
+    <Box sx={{padding:{md:'0 12rem'}}}>
       <Grid container spacing={1} justifyContent="center">
         <Grid item xs={4}>
           <FormControl fullWidth>

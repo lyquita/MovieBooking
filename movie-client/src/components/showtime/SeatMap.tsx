@@ -3,7 +3,7 @@ import { Box, List, ListItem, Typography } from "@mui/material";
 const SeatMap = () =>{
 
     return(
-        <Box sx={{color:'white', padding:'2rem', display:'flex', flexDirection:'column', alignItems:'center'}}>
+        <Box sx={{color:'white', padding:{md:'0 12rem', xs:'2rem'}, display:'flex', flexDirection:'column', alignItems:'center'}}>
             <Box sx={{border:'2px solid rgb(96, 93, 169)', width:'80%'}}>
             </Box>
             <Typography marginBottom={4}>Screen</Typography>

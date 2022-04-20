@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Reserved = () => {
   return (
-    <Box sx={{ background: "black", paddingBottom: "1.5rem" }}>
+    <Box sx={{ background: "black", padding:{md:'0 12rem', xs:'0 0 2rem 0'} }}>
       <Box
         sx={{
           background: "rgb(59, 59, 59)",
