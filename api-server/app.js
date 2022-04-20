@@ -6,6 +6,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
+// multiple routes
+app.use('/auth', require('./routes/auth'))
+
+
 app.get('/', (req, res)=>{
     res.send('hello world')
 })
