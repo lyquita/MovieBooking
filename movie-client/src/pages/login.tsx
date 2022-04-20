@@ -12,7 +12,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   return (
-    <Box>
+    <Box sx={{display:'flex'}}>
       <Box
         sx={{
           backgroundImage: "url(https://source.unsplash.com/featured/?cinema)",
