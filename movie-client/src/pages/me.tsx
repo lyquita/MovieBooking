@@ -5,7 +5,7 @@ import MyReserved from "../components/me/MyReserved";
 const Me =() => {
 
     return(
-        <Box sx={{background:'black'}}>
+        <Box sx={{background:'black', padding:{md:'0 14rem'}}}>
             <MyReserved />
             <MyAccount />
         </Box>

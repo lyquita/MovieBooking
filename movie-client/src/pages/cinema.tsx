@@ -1,5 +1,4 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 
 const Cinemas = () => {
   return (
@@ -26,10 +25,6 @@ const Cinemas = () => {
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
-          <Link
-            to="/movie-info"
-            style={{ textDecoration: "none", color: "white" }}
-          >
             <Box
               sx={{
                 background:
@@ -68,7 +63,6 @@ const Cinemas = () => {
                 </Typography>
               </Box>
             </Box>
-          </Link>
         </Paper>
       </Grid>
       <Grid
@@ -84,10 +78,6 @@ const Cinemas = () => {
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
-          <Link
-            to="/movie-info"
-            style={{ textDecoration: "none", color: "white" }}
-          >
             <Box
               sx={{
                 background:
@@ -126,7 +116,6 @@ const Cinemas = () => {
                 </Typography>
               </Box>
             </Box>
-          </Link>
         </Paper>
       </Grid>
       <Grid
@@ -142,10 +131,6 @@ const Cinemas = () => {
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
-          <Link
-            to="/movie-info"
-            style={{ textDecoration: "none", color: "white" }}
-          >
             <Box
               sx={{
                 background:
@@ -184,7 +169,6 @@ const Cinemas = () => {
                 </Typography>
               </Box>
             </Box>
-          </Link>
         </Paper>
       </Grid>
     </Grid>
