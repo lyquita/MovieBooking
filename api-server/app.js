@@ -17,7 +17,7 @@ db.authenticate()
 .catch((err)=> console.log('!!!!!!!!!Database error' + err))
 
 //sync model
-db.sync({alter:true})
+// db.sync({alter:true})
 
 
 app.get('/', (req, res)=>{
