@@ -5,8 +5,10 @@ const User = db.define(
   "User",
   {
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
+      allowNull: false
     },
     username: {
       type: DataTypes.STRING(80),
@@ -21,7 +23,7 @@ const User = db.define(
       unique: true,
     },
     mobilephone: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING(20),
       unique: true,
     },
     password: {
