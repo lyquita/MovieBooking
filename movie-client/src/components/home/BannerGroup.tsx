@@ -2,27 +2,52 @@ import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+interface Banner {
+  poster: string;
+  movieTitle: string;
+  genres: string;
+  duration: number;
+  description: string;
+}
 
 const BannerGroup = () => {
-  const seetings = {
+  const [bannerList, setBannerList] = useState<Banner[]>([]);
+
+  useEffect(() => {
+    axios
+      .get("/movies/banner")
+      .then((res) => setBannerList(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const settings = {
     fade: true,
     infinite: true,
     speed: 5000,
     autoplay: true,
-    nextArrow:<></>,
-    prevArrow:<></>
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
+
+  console.log(bannerList)
 
   return (
     <>
-      <Slider {...seetings}>
-        <Box
+    <Typography>Banner!!!</Typography>
+      <Slider {...settings}>
+      
+        {
+          bannerList.map((item)=>(
+<Box
           sx={{
             backgroundImage:
-              "url('https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg')",
+              `url(${item.poster})`,
             height: "80vh",
-            backgroundRepeat:"no-repeat",
-            backgroundSize:'cover'
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
           }}
         >
           <Box
@@ -40,8 +65,13 @@ const BannerGroup = () => {
             }}
           >
             <Box sx={{ padding: "2rem" }}>
-              <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
-                Morbius
+              <Typography
+                fontSize={16}
+                fontWeight={400}
+                lineHeight={2}
+                sx={{ fontSize: { lg: "32px" } }}
+              >
+               {item.movieTitle}
               </Typography>
               <Typography
                 fontSize={12}
@@ -49,9 +79,7 @@ const BannerGroup = () => {
                 lineHeight={2}
                 color="#cfd6e1"
               >
-                In his attempt to cure his own blood disorder, a biochemist
-                inadvertently turns himself into a pseudo-vampire with
-                superhuman abilities.
+                {item.description}
               </Typography>
               <Typography
                 sx={{
@@ -61,7 +89,7 @@ const BannerGroup = () => {
                   lineHeight: "1.5",
                 }}
               >
-                128min
+                {item.duration}min
               </Typography>
               <Typography
                 sx={{
@@ -73,7 +101,7 @@ const BannerGroup = () => {
                   marginLeft: "1rem",
                 }}
               >
-                Action
+                {item.genres}
               </Typography>
             </Box>
             <Box
@@ -94,164 +122,8 @@ const BannerGroup = () => {
             </Box>
           </Box>
         </Box>
-        <Box
-          sx={{
-            backgroundImage:
-              "url('https://image.tmdb.org/t/p/original/rtf4vjjLZLalpOzDUi0Qd2GTUqq.jpg')",
-            height: "80vh",
-            backgroundRepeat:"no-repeat",
-            backgroundSize:'cover'
-          }}
-        >
-          <Box
-            sx={{
-              position: "absolute",
-              top: "0",
-              left: "0",
-              background:
-                "linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, transparent 100%)",
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-            }}
-          >
-            <Box sx={{ padding: "2rem" }}>
-            <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
-                Whats sup!!
-              </Typography>
-              <Typography
-                fontSize={12}
-                fontWeight={400}
-                lineHeight={2}
-                color="#cfd6e1"
-              >
-                In his attempt to cure his own blood disorder, a biochemist
-                inadvertently turns himself into a pseudo-vampire with
-                superhuman abilities.   In his attempt to cure his own blood disorder, a biochemist
-                inadvertently turns himself into a pseudo-vampire with
-                superhuman abilities.   In his attempt to cure his own blood disorder, a biochemist
-                inadvertently turns himself into a pseudo-vampire with
-                superhuman abilities.
-              </Typography>
-              <Typography
-                sx={{
-                  border: "1px solid rgba(255,255,255,0.13)",
-                  fontSize: "0.75rem",
-                  display: "inline-block",
-                  lineHeight: "1.5",
-                }}
-              >
-                128min
-              </Typography>
-              <Typography
-                sx={{
-                  border: "1px solid rgba(255,255,255,0.13)",
-                  fontSize: "0.75rem",
-                  display: "inline-block",
-                  lineHeight: "1.5",
-                  color: "#cee4fd",
-                  marginLeft: "1rem",
-                }}
-              >
-                Action
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                position: "fixed",
-                bottom: "5%",
-                left: "2%",
-                display: "flex",
-              }}
-            >
-              <Link
-                to="/movie-info"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
-              </Link>
-              <ArrowRightAltIcon />
-            </Box>
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            backgroundImage:
-              "url('https://image.tmdb.org/t/p/w370_and_h556_bestv2/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg')",
-            height: "80vh",
-            backgroundRepeat:"no-repeat",
-            backgroundSize:'cover'
-          }}
-        >
-          <Box
-            sx={{
-              position: "absolute",
-              top: "0",
-              left: "0",
-              background:
-                "linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, transparent 100%)",
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-            }}
-          >
-            <Box sx={{ padding: "2rem" }}>
-            <Typography fontSize={16} fontWeight={400} lineHeight={2} sx={{fontSize:{lg:'32px'}}}>
-                Hellow
-              </Typography>
-              <Typography
-                fontSize={12}
-                fontWeight={400}
-                lineHeight={2}
-                color="#cfd6e1"
-              >
-               Forecxdafsfgadsgasgdagdagfdasgfadfafggadsfadsfadsfasfadsfasfads
-              </Typography>
-              <Typography
-                sx={{
-                  border: "1px solid rgba(255,255,255,0.13)",
-                  fontSize: "0.75rem",
-                  display: "inline-block",
-                  lineHeight: "1.5",
-                }}
-              >
-                128min
-              </Typography>
-              <Typography
-                sx={{
-                  border: "1px solid rgba(255,255,255,0.13)",
-                  fontSize: "0.75rem",
-                  display: "inline-block",
-                  lineHeight: "1.5",
-                  color: "#cee4fd",
-                  marginLeft: "1rem",
-                }}
-              >
-                Action
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                position: "fixed",
-                bottom: "5%",
-                left: "2%",
-                display: "flex",
-              }}
-            >
-              <Link
-                to="/movie-info"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
-              </Link>
-              <ArrowRightAltIcon />
-            </Box>
-          </Box>
-        </Box>
+          ))
+        }
       </Slider>
     </>
   );

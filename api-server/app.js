@@ -2,14 +2,27 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const db = require('./config/database');
-const User = require('./models/user')
+const cors = require('cors');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+
+// swagger ui document
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 // dotenv setting
 dotenv.config();
 
+// cors
+const corsConfig = {
+    origin:["http://localhost:3000", "http://localhost:3001"]
+}
+app.use(cors(corsConfig))
+
 
 // multiple routes
 app.use('/auth', require('./routes/auth'))
+app.use('/movies', require('./routes/movies'))
 
 // test db 
 db.authenticate()
@@ -18,6 +31,9 @@ db.authenticate()
 
 //sync model
 // db.sync({alter:true})
+// Banner.sync({alter:true})
+
+
 
 
 app.get('/', (req, res)=>{

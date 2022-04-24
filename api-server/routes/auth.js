@@ -91,7 +91,7 @@ router.post("/signup", multer().none(), async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    process.exit;
+    process.exit(1);
   }
 });
 
