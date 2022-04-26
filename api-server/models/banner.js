@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 const db = require("../config/database");
+const MovieDetail = require("./movieDetail");
 
 
 const Banner = db.define("Banner", {
@@ -26,10 +27,17 @@ const Banner = db.define("Banner", {
     },
     genres: {
         type: DataTypes.STRING(50),
+    },
+    movieId: {
+        type: DataTypes.UUID,
+        references:{
+            model: MovieDetail,
+            key: 'id'
+        }
     }
 },{
     tableName: "banner",
-    timestameps: false
+    timestamps: false
 })
 
 module.exports = Banner

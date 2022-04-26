@@ -5,6 +5,7 @@ const db = require('./config/database');
 const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
+const MovieDetail = require('./models/movieDetail');
 
 
 // swagger ui document
@@ -32,6 +33,7 @@ db.authenticate()
 //sync model
 // db.sync({alter:true})
 // Banner.sync({alter:true})
+// MovieDetail.sync()
 
 
 
