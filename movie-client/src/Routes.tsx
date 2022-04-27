@@ -24,7 +24,7 @@ const AppRouter = () => {
           }
         />
         <Route
-          path="/movie-info"
+          path="/movie-info/:movieId"
           element={
             <PublicLayout withFooter={false}>
               <MovieInfo />
@@ -71,7 +71,7 @@ const AppRouter = () => {
             </PublicLayout>
           }
         ></Route>
-          <Route
+        <Route
           path="/cinemas"
           element={
             <PublicLayout>

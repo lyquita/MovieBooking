@@ -11,10 +11,13 @@ interface Banner {
   genres: string;
   duration: number;
   description: string;
+  movieId: string;
 }
 
 const BannerGroup = () => {
   const [bannerList, setBannerList] = useState<Banner[]>([]);
+
+  const handleInfo = () => {};
 
   useEffect(() => {
     axios
@@ -43,6 +46,7 @@ const BannerGroup = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
+            key={item.movieId}
           >
             <Box
               sx={{
@@ -58,7 +62,7 @@ const BannerGroup = () => {
                 color: "white",
               }}
             >
-              <Box sx={{ padding: "2rem", width:'50%' }}>
+              <Box sx={{ padding: "2rem", width: "50%" }}>
                 <Typography
                   fontSize={16}
                   fontWeight={400}
@@ -107,7 +111,7 @@ const BannerGroup = () => {
                 }}
               >
                 <Link
-                  to="/movie-info"
+                  to={`/movie-info/${item.movieId}`}
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
