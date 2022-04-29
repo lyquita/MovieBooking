@@ -26,6 +26,18 @@ const ComingSoon = db.define(
         key: "id",
       },
     },
+    description: {
+      type: DataTypes.STRING(500),
+    },
+    duration: {
+      type: DataTypes.STRING(5),
+    },
+    genres: {
+      type: DataTypes.STRING(50),
+    },
+    director: {
+      type: DataTypes.STRING(50),
+    },
   },
   {
     tableName: "comingsoon",

@@ -34,8 +34,8 @@ db.authenticate()
 // db.sync({alter:true})
 // Banner.sync({alter:true})
 // MovieDetail.sync()
-// NowShowing.sync({ alter: true });
-// ComingSoon.sync({alter:true});
+NowShowing.sync({ alter: true });
+ComingSoon.sync({ alter: true });
 
 app.get("/", (req, res) => {
   res.send("hello world");

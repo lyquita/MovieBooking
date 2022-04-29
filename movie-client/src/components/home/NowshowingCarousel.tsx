@@ -2,6 +2,7 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 interface Nowshowing {
@@ -127,19 +128,24 @@ const NowshowingCarousel = () => {
                 ":hover": { backgroundColor: "#282828" },
               }}
             >
-              <Box
-                sx={{
-                  width: "auto",
-                  height: "300px",
-                  backgroundImage: `url(${item.thumbnail})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-              ></Box>
-              <Typography color="white" padding="1rem 0" textAlign="center">
-                {item.movieTitle}
-              </Typography>
+              <Link
+                to={`/movie-info/${item.movieId}`}
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Box
+                  sx={{
+                    width: "auto",
+                    height: "300px",
+                    backgroundImage: `url(${item.thumbnail})`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                  }}
+                ></Box>
+                <Typography color="white" padding="1rem 0" textAlign="center">
+                  {item.movieTitle}
+                </Typography>
+              </Link>
             </Box>
           ))}
         </Slider>
