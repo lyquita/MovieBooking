@@ -2,8 +2,8 @@ const { DataTypes } = require("sequelize");
 const db = require("../config/database");
 const MovieDetail = require("./movieDetail");
 
-const Banner = db.define(
-  "Banner",
+const NowShowing = db.define(
+  "NowShowing",
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,23 +11,13 @@ const Banner = db.define(
       primaryKey: true,
       allowNull: false,
     },
-    poster: {
+    thumbnail: {
       type: DataTypes.STRING(100),
       allowNull: false,
     },
     movieTitle: {
       type: DataTypes.STRING(50),
       allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING(500),
-    },
-    duration: {
-      type: DataTypes.STRING(5),
-      allowNull: false,
-    },
-    genres: {
-      type: DataTypes.STRING(50),
     },
     movieId: {
       type: DataTypes.UUID,
@@ -38,9 +28,9 @@ const Banner = db.define(
     },
   },
   {
-    tableName: "banner",
+    tableName: "nowshowing",
     timestamps: false,
   }
 );
 
-module.exports = Banner;
+module.exports = NowShowing;

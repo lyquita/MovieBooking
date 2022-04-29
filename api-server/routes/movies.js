@@ -1,6 +1,7 @@
 const express = require("express");
 const Banner = require("../models/banner");
 const MovieDetail = require("../models/movieDetail");
+const NowShowing = require("../models/nowShowing");
 
 const router = express.Router();
 
@@ -25,6 +26,16 @@ router.get("/detail/:movieId", async (req, res) => {
       });
       return res.status(200).json(movieDetail);
     }
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+});
+
+router.get("/nowshowing", async (req, res) => {
+  try {
+    const nowshowing = await NowShowing.findAll();
+    return res.status(200).json(nowshowing);
   } catch (err) {
     console.log(err);
     process.exit(1);
