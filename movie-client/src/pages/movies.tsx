@@ -85,7 +85,7 @@ const Movies = () => {
                 sx={{ background: "black", borderRadius: "10px", boxShadow: 2 }}
               >
                 <Link
-                  to="/movie-info"
+                  to={`/movie-info/${item.movieId}`}
                   style={{
                     textDecoration: "none",
                     color: "white",
@@ -163,7 +163,7 @@ const Movies = () => {
                 sx={{ background: "black", borderRadius: "10px", boxShadow: 2 }}
               >
                 <Link
-                  to="/movie-info"
+                  to={`/movie-info/${item.movieId}`}
                   style={{
                     textDecoration: "none",
                     color: "white",

@@ -3,6 +3,7 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 interface ComingSoon {
   id: number;
@@ -126,16 +127,22 @@ const ComingSoonCarousel = () => {
                 ":hover": { backgroundColor: "#282828" },
               }}
             >
-              <Box
-                sx={{
-                  width: "auto",
-                  height: "300px",
-                  backgroundImage: `url(${item.thumbnail})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-              ></Box>
+              <Link
+                to={`/movie-info/${item.movieId}`}
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Box
+                  sx={{
+                    width: "auto",
+                    height: "300px",
+                    backgroundImage: `url(${item.thumbnail})`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                  }}
+                ></Box>
+              </Link>
+
               <Typography color="white" padding="1rem 0" textAlign="center">
                 {item.movieTitle}
               </Typography>
