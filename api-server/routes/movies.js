@@ -1,5 +1,6 @@
 const express = require("express");
 const Banner = require("../models/banner");
+const ComingSoon = require("../models/comingSoon");
 const MovieDetail = require("../models/movieDetail");
 const NowShowing = require("../models/nowShowing");
 
@@ -36,6 +37,16 @@ router.get("/nowshowing", async (req, res) => {
   try {
     const nowshowing = await NowShowing.findAll();
     return res.status(200).json(nowshowing);
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+});
+
+router.get("/comingsoon", async (req, res) => {
+  try {
+    const comingsoon = await ComingSoon.findAll();
+    return res.status(200).json(comingsoon);
   } catch (err) {
     console.log(err);
     process.exit(1);

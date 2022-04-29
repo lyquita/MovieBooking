@@ -7,6 +7,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger.json");
 const MovieDetail = require("./models/movieDetail");
 const NowShowing = require("./models/nowShowing");
+const ComingSoon = require("./models/comingSoon");
 
 // swagger ui document
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
@@ -33,7 +34,8 @@ db.authenticate()
 // db.sync({alter:true})
 // Banner.sync({alter:true})
 // MovieDetail.sync()
-NowShowing.sync({ alter: true });
+// NowShowing.sync({ alter: true });
+// ComingSoon.sync({alter:true});
 
 app.get("/", (req, res) => {
   res.send("hello world");
