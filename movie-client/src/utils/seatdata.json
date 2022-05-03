@@ -1,0 +1,556 @@
+{
+  "columns": 12,
+  "rows": 5,
+  "seats": [
+    [
+      {
+        "status": "available",
+        "column": 1,
+        "row": 1,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 10
+      },
+      {
+        "status": "available",
+        "column": 2,
+        "row": 1,
+        "name": "A10",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 10
+      },
+      {
+        "status": "available",
+        "column": 3,
+        "row": 1,
+        "name": "A9",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 12
+      },
+      {
+        "status": "available",
+        "column": 4,
+        "row": 1,
+        "name": "",
+        "type": "TwinOne",
+        "shouldDisplay": false,
+        "price": 11
+      },
+      {
+        "status": "available",
+        "column": 5,
+        "row": 1,
+        "name": "A7",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 11
+      },
+      {
+        "status": "available",
+        "column": 6,
+        "row": 1,
+        "name": "A6",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 7,
+        "row": 1,
+        "name": "A5",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 8,
+        "row": 1,
+        "name": "A4",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 9,
+        "row": 1,
+        "name": "A3",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 10,
+        "row": 1,
+        "name": "A2",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 11,
+        "row": 1,
+        "name": "A1",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "occupied",
+        "column": 12,
+        "row": 1,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      }
+    ],
+    [
+      {
+        "status": "occupied",
+        "column": 1,
+        "row": 2,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 2,
+        "row": 2,
+        "name": "",
+        "type": "TwinOne",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 3,
+        "row": 2,
+        "name": "B9",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 4,
+        "row": 2,
+        "name": "B8",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 5,
+        "row": 2,
+        "name": "B7",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 6,
+        "row": 2,
+        "name": "B6",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 7,
+        "row": 2,
+        "name": "B5",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 8,
+        "row": 2,
+        "name": "B4",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 9,
+        "row": 2,
+        "name": "B3",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 10,
+        "row": 2,
+        "name": "B2",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 11,
+        "row": 2,
+        "name": "B1",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "occupied",
+        "column": 12,
+        "row": 2,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      }
+    ],
+    [
+      {
+        "status": "occupied",
+        "column": 1,
+        "row": 3,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 2,
+        "row": 3,
+        "name": "C10",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 3,
+        "row": 3,
+        "name": "C9",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 4,
+        "row": 3,
+        "name": "C8",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 5,
+        "row": 3,
+        "name": "C7",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 6,
+        "row": 3,
+        "name": "C6",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 7,
+        "row": 3,
+        "name": "C5",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 8,
+        "row": 3,
+        "name": "C4",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 9,
+        "row": 3,
+        "name": "C3",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 10,
+        "row": 3,
+        "name": "C2",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 11,
+        "row": 3,
+        "name": "C1",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "occupied",
+        "column": 12,
+        "row": 3,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      }
+    ],
+    [
+      {
+        "status": false,
+        "column": 1,
+        "row": 4,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 2,
+        "row": 4,
+        "name": "D10",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 3,
+        "row": 4,
+        "name": "D9",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 4,
+        "row": 4,
+        "name": "D8",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 5,
+        "row": 4,
+        "name": "D7",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 6,
+        "row": 4,
+        "name": "D6",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 7,
+        "row": 4,
+        "name": "D5",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 8,
+        "row": 4,
+        "name": "D4",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 9,
+        "row": 4,
+        "name": "D3",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 10,
+        "row": 4,
+        "name": "D2",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 11,
+        "row": 4,
+        "name": "",
+        "type": "TwinTwo",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "occupied",
+        "column": 12,
+        "row": 4,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      }
+    ],
+    [
+      {
+        "status": "occupied",
+        "column": 1,
+        "row": 5,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 2,
+        "row": 5,
+        "name": "E10",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 3,
+        "row": 5,
+        "name": "E9",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 4,
+        "row": 5,
+        "name": "E8",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 5,
+        "row": 5,
+        "name": "E7",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 6,
+        "row": 5,
+        "name": "E6",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 7,
+        "row": 5,
+        "name": "E5",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 8,
+        "row": 5,
+        "name": "E4",
+        "type": "TwinOne",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 9,
+        "row": 5,
+        "name": "E3",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 10,
+        "row": 5,
+        "name": "",
+        "type": "TwinOne",
+        "shouldDisplay": false,
+        "price": 20
+      },
+      {
+        "status": "available",
+        "column": 11,
+        "row": 5,
+        "name": "E1",
+        "type": "TwinTwo",
+        "shouldDisplay": true,
+        "price": 20
+      },
+      {
+        "status": "occupied",
+        "column": 12,
+        "row": 5,
+        "name": "",
+        "type": "NotASeat",
+        "shouldDisplay": false,
+        "price": 20
+      }
+    ]
+  ]
+}

@@ -3,9 +3,17 @@ import React from "react";
 
 interface Props {
   setReserved: React.Dispatch<React.SetStateAction<boolean>>;
+  selectedSeat: string[];
+  selectedAmount: number;
+  setSelectedSeat: (value: any) => void;
 }
 
-const Confirm: React.FC<Props> = ({ setReserved }) => {
+const Confirm: React.FC<Props> = ({
+  setReserved,
+  selectedSeat,
+  selectedAmount,
+  setSelectedSeat,
+}) => {
   return (
     <Box
       sx={{
@@ -25,11 +33,11 @@ const Confirm: React.FC<Props> = ({ setReserved }) => {
       >
         <Grid item xs={4} padding={2}>
           <Typography color="rgb(93, 93, 97)">Tickets</Typography>
-          <Typography color="white">1 </Typography>
+          <Typography color="white">{selectedSeat.length} </Typography>
         </Grid>
         <Grid item xs={4} padding={2}>
           <Typography color="rgb(93, 93, 97)">Price</Typography>
-          <Typography color="white">$10</Typography>
+          <Typography color="white">${selectedAmount}</Typography>
         </Grid>
         <Grid
           item
@@ -43,7 +51,11 @@ const Confirm: React.FC<Props> = ({ setReserved }) => {
             border: "#282c34 1px solid",
           }}
         >
-          <Button onClick={() => setReserved(true)}>
+          <Button
+            onClick={() => {
+              setReserved(true);
+            }}
+          >
             <Typography color="rgb(120, 205, 4)">Checkout</Typography>
           </Button>
         </Grid>

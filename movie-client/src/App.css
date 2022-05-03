@@ -51,17 +51,38 @@
 
 .columns{
   background: rgb(96, 93, 169);
-  width: 20px;
+  /* width: 20px; */
   height: 20px;
   text-align: center;
   margin: 0.5rem;
+  padding: 0.2rem;
+  line-height: 20px
 }
 
+.columns:active{
+  /* background: green */
+}
+
+
+.available{
+  background: rgb(96, 93, 169)
+}
+
+.selected{
+  background: green
+}
+
+.invisible {
+  display: hidden;
+  /* width: 20px; */
+  height: 20px;
+}
 /* me */
 
 .table-cell{
   color: #fff !important
 }
+
 
 
 
