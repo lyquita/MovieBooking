@@ -11,8 +11,6 @@ const Showtime = () => {
   const [selectedSeat, setSelectedSeat] = useState<string[]>([]);
   const [selectedAmount, setSelectedAmount] = useState<number>(0);
 
-  console.log("from par", selectedSeat, selectedAmount);
-
   if (!reserved) {
     return (
       <Box sx={{ background: "black" }}>
@@ -36,7 +34,7 @@ const Showtime = () => {
       <Box sx={{ background: "black" }}>
         <Banner />
         <Filter />
-        <Reserved />
+        <Reserved setSelectedSeat={setSelectedSeat} />
       </Box>
     );
   }

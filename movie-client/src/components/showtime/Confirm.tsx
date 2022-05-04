@@ -1,5 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useReducer } from "react";
+import SeatDataReducer from "../../stores/seatDataReducer";
+import seatData from "../../utils/seatdata.json";
 
 interface Props {
   setReserved: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,6 +16,12 @@ const Confirm: React.FC<Props> = ({
   selectedAmount,
   setSelectedSeat,
 }) => {
+  //@ts-ignore
+  const [seatDataState, seatDataDispatch] = useReducer(
+    SeatDataReducer,
+    seatData
+  );
+
   return (
     <Box
       sx={{
@@ -53,10 +61,16 @@ const Confirm: React.FC<Props> = ({
         >
           <Button
             onClick={() => {
+              setSelectedSeat([]);
               setReserved(true);
             }}
           >
-            <Typography color="rgb(120, 205, 4)">Checkout</Typography>
+            <Typography
+              color="rgb(120, 205, 4)"
+              onClick={() => seatDataDispatch({ type: "REMOVE" })}
+            >
+              Checkout
+            </Typography>
           </Button>
         </Grid>
       </Grid>

@@ -1,15 +1,15 @@
-import {
-  Box,
-  Button,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const Reserved = () => {
+interface Props {
+  setSelectedSeat: (value: any) => void;
+}
+
+const Reserved: React.FC<Props> = ({ setSelectedSeat }) => {
   return (
-    <Box sx={{ background: "black", padding:{md:'0 12rem', xs:'0 0 2rem 0'} }}>
+    <Box
+      sx={{ background: "black", padding: { md: "0 12rem", xs: "0 0 2rem 0" } }}
+    >
       <Box
         sx={{
           background: "rgb(59, 59, 59)",
@@ -36,7 +36,13 @@ const Reserved = () => {
           </Typography>
           <Button variant="outlined">DOWNLOAD PASS</Button>
         </Box>
-        <Box sx={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <TextField
             label="email"
             variant="outlined"
@@ -45,16 +51,33 @@ const Reserved = () => {
               "& .MuiOutlinedInput-root": {
                 "& fieldset": { borderColor: "gray" },
               },
-              input:{color:'white'},
-              label:{color:'rgba(255, 255, 255, 0.7)'},
-              "& p":{color:'rgba(255, 255, 255, 0.7)'},
-              width:'100%' 
+              input: { color: "white" },
+              label: { color: "rgba(255, 255, 255, 0.7)" },
+              "& p": { color: "rgba(255, 255, 255, 0.7)" },
+              width: "100%",
             }}
           />
-          <Stack display='flex' flexDirection='row' marginTop={2} >
-            <Button variant='outlined' sx={{marginRight:'1rem', '&.MuiButton-root':{color:'rgba(255, 255, 255, 0.7)', border:'1px solid rgba(255, 255, 255, 0.7)' }}}>Send Invitations</Button>
-            <Link to='/' style={{'textDecoration':'none', color:'white'}}>
-            <Button variant='outlined' color='warning'>Cancel</Button>
+          <Stack display="flex" flexDirection="row" marginTop={2}>
+            <Button
+              variant="outlined"
+              sx={{
+                marginRight: "1rem",
+                "&.MuiButton-root": {
+                  color: "rgba(255, 255, 255, 0.7)",
+                  border: "1px solid rgba(255, 255, 255, 0.7)",
+                },
+              }}
+            >
+              Send Invitations
+            </Button>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <Button
+                variant="outlined"
+                color="warning"
+                onClick={() => setSelectedSeat([])}
+              >
+                Cancel
+              </Button>
             </Link>
           </Stack>
         </Box>
