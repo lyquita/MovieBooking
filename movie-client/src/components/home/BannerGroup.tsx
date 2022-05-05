@@ -42,7 +42,7 @@ const BannerGroup = () => {
           <Box
             sx={{
               backgroundImage: `url(${item.poster})`,
-              height: "80vh",
+              height: "60vh",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
@@ -109,15 +109,7 @@ const BannerGroup = () => {
                   left: "2%",
                   display: "flex",
                 }}
-              >
-                <Link
-                  to={`/movie-info/${item.movieId}`}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Typography sx={{ marginRight: "1rem" }}>INFO</Typography>
-                </Link>
-                <ArrowRightAltIcon />
-              </Box>
+              ></Box>
             </Box>
           </Box>
         ))}

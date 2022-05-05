@@ -21,48 +21,49 @@ const Cinemas = () => {
             background: "#606060",
             borderRadius: "10px",
             boxShadow: 2,
-            width: { md: "60%", sm: "90%" },
+            width: { md: "60%", xs: "90%" },
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
+          <Box
+            sx={{
+              background:
+                "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+              width: "100%",
+            }}
+          >
             <Box
               sx={{
-                background:
-                  "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                backgroundImage:
+                  "url('https://source.unsplash.com/featured/?cinema')",
+                width: "100%",
+                padding: "2rem",
+                backgroundSize: "cover",
+                opacity: "0.8",
+                height: "200px",
               }}
-            >
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url('https://source.unsplash.com/featured/?cinema')",
-                  width: "100%",
-                  padding: "2rem",
-                  backgroundSize: "cover",
-                  opacity: "0.8",
-                  height: "200px",
-                }}
-              ></Box>
-              <Box padding="2rem">
-                <Typography fontSize={18} color="rgb(207, 214, 225)">
-                  Home Cinema
-                </Typography>
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  location
-                </Typography>
+            ></Box>
+            <Box padding="2rem">
+              <Typography fontSize={18} color="rgb(207, 214, 225)">
+                Home Cinema
+              </Typography>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                location
+              </Typography>
 
-                <Typography
-                  fontSize={12}
-                  color="rgba(255,255,255,0.7)"
-                  marginTop={5}
-                >
-                  10$ per movie
-                </Typography>
+              <Typography
+                fontSize={12}
+                color="rgba(255,255,255,0.7)"
+                marginTop={5}
+              >
+                10$ per movie
+              </Typography>
 
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  100 seats availabe
-                </Typography>
-              </Box>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                100 seats availabe
+              </Typography>
             </Box>
+          </Box>
         </Paper>
       </Grid>
       <Grid
@@ -74,48 +75,48 @@ const Cinemas = () => {
             background: "#606060",
             borderRadius: "10px",
             boxShadow: 2,
-            width: { md: "60%", sm: "90%" },
+            width: { md: "60%", xs: "90%" },
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
+          <Box
+            sx={{
+              background:
+                "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+            }}
+          >
             <Box
               sx={{
-                background:
-                  "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                backgroundImage:
+                  "url('https://source.unsplash.com/featured/?cinema')",
+                width: "100%",
+                padding: "2rem",
+                backgroundSize: "cover",
+                opacity: "0.8",
+                height: "200px",
               }}
-            >
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url('https://source.unsplash.com/featured/?cinema')",
-                  width: "100%",
-                  padding: "2rem",
-                  backgroundSize: "cover",
-                  opacity: "0.8",
-                  height: "200px",
-                }}
-              ></Box>
-              <Box padding="2rem">
-                <Typography fontSize={18} color="rgb(207, 214, 225)">
-                  Home Cinema
-                </Typography>
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  location
-                </Typography>
+            ></Box>
+            <Box padding="2rem">
+              <Typography fontSize={18} color="rgb(207, 214, 225)">
+                Home Cinema
+              </Typography>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                location
+              </Typography>
 
-                <Typography
-                  fontSize={12}
-                  color="rgba(255,255,255,0.7)"
-                  marginTop={5}
-                >
-                  10$ per movie
-                </Typography>
+              <Typography
+                fontSize={12}
+                color="rgba(255,255,255,0.7)"
+                marginTop={5}
+              >
+                10$ per movie
+              </Typography>
 
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  100 seats availabe
-                </Typography>
-              </Box>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                100 seats availabe
+              </Typography>
             </Box>
+          </Box>
         </Paper>
       </Grid>
       <Grid
@@ -127,48 +128,48 @@ const Cinemas = () => {
             background: "#606060",
             borderRadius: "10px",
             boxShadow: 2,
-            width: { md: "60%", sm: "90%" },
+            width: { md: "60%", xs: "90%" },
             margin: { md: "2rem 10rem", sm: "2rem 5rem" },
           }}
         >
+          <Box
+            sx={{
+              background:
+                "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+            }}
+          >
             <Box
               sx={{
-                background:
-                  "linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%)",
+                backgroundImage:
+                  "url('https://source.unsplash.com/featured/?cinema')",
+                width: "100%",
+                padding: "2rem",
+                backgroundSize: "cover",
+                opacity: "0.8",
+                height: "200px",
               }}
-            >
-              <Box
-                sx={{
-                  backgroundImage:
-                    "url('https://source.unsplash.com/featured/?cinema')",
-                  width: "100%",
-                  padding: "2rem",
-                  backgroundSize: "cover",
-                  opacity: "0.8",
-                  height: "200px",
-                }}
-              ></Box>
-              <Box padding="2rem">
-                <Typography fontSize={18} color="rgb(207, 214, 225)">
-                  Home Cinema
-                </Typography>
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  location
-                </Typography>
+            ></Box>
+            <Box padding="2rem">
+              <Typography fontSize={18} color="rgb(207, 214, 225)">
+                Home Cinema
+              </Typography>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                location
+              </Typography>
 
-                <Typography
-                  fontSize={12}
-                  color="rgba(255,255,255,0.7)"
-                  marginTop={5}
-                >
-                  10$ per movie
-                </Typography>
+              <Typography
+                fontSize={12}
+                color="rgba(255,255,255,0.7)"
+                marginTop={5}
+              >
+                10$ per movie
+              </Typography>
 
-                <Typography fontSize={12} color="rgba(255,255,255,0.7)">
-                  100 seats availabe
-                </Typography>
-              </Box>
+              <Typography fontSize={12} color="rgba(255,255,255,0.7)">
+                100 seats availabe
+              </Typography>
             </Box>
+          </Box>
         </Paper>
       </Grid>
     </Grid>

@@ -82,7 +82,12 @@ const Movies = () => {
           {nowshowinglist.map((item) => (
             <Grid item md={4}>
               <Paper
-                sx={{ background: "black", borderRadius: "10px", boxShadow: 2 }}
+                sx={{
+                  background: "black",
+                  borderRadius: "10px",
+                  boxShadow: 2,
+                  height: "400px",
+                }}
               >
                 <Link
                   to={`/movie-info/${item.movieId}`}
@@ -91,6 +96,7 @@ const Movies = () => {
                     color: "white",
                     display: "flex",
                     justifyContent: "center",
+                    height: "100%",
                   }}
                 >
                   <Box
@@ -160,7 +166,12 @@ const Movies = () => {
           {comingsoonlist.map((item) => (
             <Grid item key={item.id} md={4}>
               <Paper
-                sx={{ background: "black", borderRadius: "10px", boxShadow: 2 }}
+                sx={{
+                  background: "black",
+                  borderRadius: "10px",
+                  boxShadow: 2,
+                  height: "400px",
+                }}
               >
                 <Link
                   to={`/movie-info/${item.movieId}`}
@@ -169,6 +180,7 @@ const Movies = () => {
                     color: "white",
                     display: "flex",
                     justifyContent: "center",
+                    height: "100%",
                   }}
                 >
                   <Box
